@@ -1,0 +1,13 @@
+{
+    "browser_action":
+    {
+        "default_title": "Tabs",
+        "default_popup":"tabs.html" 
+    },
+    "description": "Tab Operations, including random selection",
+    "homepage_url": "https://test.com",
+    "manifest_version": 2,
+    "name": "tabRandom",
+    "permissions": ["tabs"],
+    "version": "1.0"
+}
