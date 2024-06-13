@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "CS2ELO",
+    "version": "1.0",
+    "description": "Overhaul of the CS2 steam ELO page.",
+    "permissions":
+    [
+        "storage"
+    ],
+    "content_scripts":
+    [
+        {
+            "matches":
+            [
+                "https://steamcommunity.com/id/*/gcpd/730/?tab=majors"
+            ],
+            "js": ["cs2elo.js"]
+        }
+    ],
+    "sidebar_action":
+    {
+        "default_icon": "steam.png",
+        "default_title": "CS2ELO",
+        "default_panel": "panel.html"
+    },
+    "options_ui":
+    {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}

@@ -1,0 +1,19 @@
+body
+{
+    color: white;
+    text-align: center;
+}
+table, td, th 
+{
+    border: 1px solid;
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+  
+table
+{
+    border-collapse: collapse;
+}
