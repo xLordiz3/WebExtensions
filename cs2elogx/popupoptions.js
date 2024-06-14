@@ -12,6 +12,19 @@ document.querySelector('#go-to-options').addEventListener('click', function()
         }
 });
 
+function checkSteamID(id)
+{
+    var type = null;
+    if(id.length > 16 && typeof(id === 'number'))
+    {
+        return "https://steamcommunity.com/profile/" + id + "/gcpd/730/?tab=majors"; 
+    }
+    else
+    {
+        return "https://steamcommunity.com/id/" + id + "/gcpd/730/?tab=majors";
+    }
+}
+
 const opts = () =>
 {
     chrome.storage.local.get(
@@ -21,8 +34,9 @@ const opts = () =>
         (items) =>
             {
                 console.log(items.profileID)
+                var idt = checkSteamID(items.profileID);
                 document.getElementById("pid").value = items.profileID;
-                const base = "https://steamcommunity.com/id/" + document.getElementById("pid").value + "/gcpd/730/?tab=majors";
+                const base = idt;
                 console.log(base);
                 //document.getElementById("steam-page-o").data = base;
                 async function scrapeData() {
