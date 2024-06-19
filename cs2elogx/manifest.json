@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "CS2ELO",
-    "version": "1.0",
+    "version": "1.0.3",
     "description": "Overhaul of the CS2 steam ELO page.",
     "permissions":
     [
@@ -12,7 +12,8 @@
         {
             "matches":
             [
-                "https://steamcommunity.com/id/*/gcpd/730/?tab=majors"
+                "https://steamcommunity.com/id/*/gcpd/730/?tab=majors",
+                "https://steamcommunity.com/profiles/*/gcpd/730/?tab=majors"
             ],
             "js": ["cs2elo.js"]
         }

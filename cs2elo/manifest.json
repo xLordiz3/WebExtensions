@@ -8,7 +8,8 @@
         {
             "matches":
             [
-                "https://steamcommunity.com/id/*/gcpd/730/?tab=majors"
+                "https://steamcommunity.com/id/*/gcpd/730/?tab=majors",
+                "https://steamcommunity.com/profile/*/gcpd/730/"
             ],
             "js": ["cs2elo.js"]
         }

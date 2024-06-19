@@ -13,7 +13,7 @@ var lowtitle = nnnrow.insertCell(0).innerHTML = "LOW ";
 var lowscore = nnnrow.insertCell(1);
 var t = table[1];
 var rows = t.tBodies[0].rows
-cscore.innerHTML = Math.ceil(rows[1].children[2].innerHTML / eloscore);
+cscore.innerHTML = Math.floor(rows[1].children[2].innerHTML / eloscore);
 cscore.style = "color:lightblue";
 var high = 0;
 var low = null;
@@ -36,7 +36,7 @@ for(var i = 0; i <= rows.length - 1; i++)
     }
     else 
     {
-        var s = Math.ceil(cells[2].innerHTML / eloscore);
+        var s = Math.floor(cells[2].innerHTML / eloscore);
         cells[2].innerHTML = s;  
         if(i + 1 === rows.length)
         {
@@ -44,7 +44,7 @@ for(var i = 0; i <= rows.length - 1; i++)
         }
         else
         {
-            var change = Math.ceil(s - (rows.item(i+1).cells[2].innerHTML /  eloscore))
+            var change = Math.floor(s - (rows.item(i+1).cells[2].innerHTML /  eloscore))
             if(Math.sign(change) != 1)
             {
                 changer.innerHTML = change;
